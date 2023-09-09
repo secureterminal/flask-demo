@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}} - Blog</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/layout.css')}}"/>
+        
+    </head>
+    <body>
+        {% block base %}
+         <nav>
+
+<label id="sidebar-label" for="sidebar-checkbox">
+<div id="burger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</label>
+<input id="sidebar-checkbox" type="checkbox"/>
+
+<div id="sidebar">sidebar</div>  
+
+
+            <a href="/home">home</a>
+            <a href="/about">about</a>
+            <a href="/contact">contact</a>
+        </nav>
+
+             <footer>
+
+              <a href="/home">home</a>
+            <a href="/about">about</a>
+            <a href="/contact">contact</a>
+        </footer>
+
+        {% endblock base %}
+
+    </body>
+</html>
